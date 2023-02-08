@@ -1,0 +1,92 @@
+/* Author: Monisha Date : 02.02.2023 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    /* box-sizing: border-box; */
+}
+
+.banner {
+    height: 103vh;
+    background-image: url(../images/academy-banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: end;
+}
+.banner > div {
+    padding-right: 10%;
+}
+h1,
+h3 {
+    font-weight: bolder;
+}
+.description {
+    min-height: 100vh;
+    /* display: flex; */
+}
+.desc_text {
+    background-color: #1e2531;
+    color: skyblue;
+    margin-left: -13%;
+}
+.desc_text > p::after {
+    content: "}";
+    color: red;
+}
+.desc_text > p::before {
+    content: "{";
+    color: red;
+}
+.course {
+    min-height: 100vh;
+    background-image: url(../images/modulebg.jpg);
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    /* margin-top: 30px; */
+}
+.course a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+.img1 {
+    background-image: url(../images/testsbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+}
+.img2 {
+    background-image: url(../images/intrvwbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+}
+.train_text {
+    background-color: rgba(6, 8, 11, 0.7);
+    color: white;
+    text-align: center;
+}
+.footer {
+    min-height: 100vh;
+}
+.join {
+    color: #f26422;
+    border: 2px solid #f26422;
+}
+@media screen and (max-width: 576px) {
+    .banner {
+        background-color: #ddd;
+        background-image: none;
+        text-align: center;
+    }
+    .desc_text {
+        margin: 0;
+    }
+    .description {
+        margin-bottom: 50px;
+    }
+}
